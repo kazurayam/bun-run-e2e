@@ -1,0 +1,13 @@
+{
+  "name": "my-app",
+  "scripts": {
+    "dev": "bun run --hot src/index.tsx",
+    "e2e": "bun run --hot src/index.tsx & echo 'do something with the dev server...'; kill $(ps aux | grep '[0-9] bun run --hot src/index.tsx' | awk '{print $2}')"
+  },
+  "dependencies": {
+    "hono": "^4.12.7",
+    "@types/bun": "latest"
+  },
+  "devDependencies": {
+  }
+}
